@@ -62,6 +62,33 @@ header{
    text-align: center;
 }
 
+.redes-sociais a{
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      text-indent: -9999px;
+}
+
+.redes-sociais{
+   text-align: center;
+}
+
+.github{
+   background-image: url(img/git.png);
+}
+
+.facebook{
+   background-image: url(img/face.png);
+}
+
+.twitter{
+   background-image: url(img/twitter.png);
+}
+
+.linkedin{
+   background-image: url(img/linkedin.png);
+}
+
 .manter h1{
    font-size: 150%;
 }
