@@ -1,5 +1,4 @@
 .zoom-mais:hover {
-      background: #FFF;
        -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1);
@@ -7,7 +6,6 @@
 
 .zoom-mais-curso:hover{
    margin-top: 5%;
-   background: #FFF;
     -webkit-transform: scale(1.1);
    -ms-transform: scale(1.1);
    transform: scale(1.1);
