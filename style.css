@@ -1,5 +1,10 @@
 h1, h2, h3, h4, h5, h6, p, body, head {
    font-family: "Open Sans", sans-serif;
+   color: #000;
+}
+
+.titulos{
+	margin-bottom: -10px;
 }
 
 body section {
@@ -17,7 +22,7 @@ body section {
 .informacoes h2{
    margin-top: 2.5%;
    margin: auto;
-   color: #2C82C7;
+   color: #2e76af;
    font-size: 18px;
 }
 
@@ -54,7 +59,9 @@ header{
    max-width: 60%;
 }
 
-
+.manter{
+	color: #000;
+}
 
 .manter h1, .manter p, .email{
    margin-top: -2%;
@@ -105,7 +112,7 @@ header{
 }
 
 .manter a{
-   color: #2C82C7;
+   color: #000;
 }
 
 a:link, a:visited {
