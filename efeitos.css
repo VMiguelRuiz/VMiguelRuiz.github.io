@@ -1,16 +1,9 @@
 .zoom-mais:hover {
+		
        -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1);
 }
-
-.zoom-mais-curso:hover{
-   margin-top: 5%;
-    -webkit-transform: scale(1.1);
-   -ms-transform: scale(1.1);
-   transform: scale(1.1);
-}
-
 
 .transp{
    -moz-opacity: 0.5;
