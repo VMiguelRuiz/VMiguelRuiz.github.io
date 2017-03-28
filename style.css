@@ -54,12 +54,21 @@ header{
    max-width: 60%;
 }
 
-.manter h1, .manter p{
+
+
+.manter h1, .manter p, .email{
    margin-top: -2%;
    margin-left: auto;
    margin-right: auto;
    max-width: 60%;
    text-align: center;
+}
+
+.botao-cv{
+	margin-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 .redes-sociais a{
@@ -68,6 +77,8 @@ header{
       display: inline-block;
       text-indent: -9999px;
 }
+
+
 
 .redes-sociais{
    text-align: center;
