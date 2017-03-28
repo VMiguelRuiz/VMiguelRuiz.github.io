@@ -59,11 +59,7 @@ header{
    max-width: 60%;
 }
 
-.manter{
-	color: #000;
-}
-
-.manter h1, .manter p, .email{
+.manter h1, .manter p{
    margin-top: -2%;
    margin-left: auto;
    margin-right: auto;
@@ -84,8 +80,6 @@ header{
       display: inline-block;
       text-indent: -9999px;
 }
-
-
 
 .redes-sociais{
    text-align: center;
