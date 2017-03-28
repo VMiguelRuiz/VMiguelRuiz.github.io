@@ -67,6 +67,10 @@ header{
    text-align: center;
 }
 
+.manter h1{
+   font-size: 160%;
+}
+
 .botao-cv{
 	margin-top: 3%;
 	margin-left: auto;
@@ -102,11 +106,6 @@ header{
    background-image: url(img/linkedin.png);
 }
 
-.manter h1{
-   font-size: 150%;
-}
-
-
 a:link, a:visited {
 	text-decoration: none
 }
@@ -115,3 +114,4 @@ a:hover {
 	text-decoration: inherit;
 	color: #1E90FF;
 }
+
