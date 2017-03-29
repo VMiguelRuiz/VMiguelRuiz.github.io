@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
    <head>
+	  <script type="text/javascript">
+        function RemoveSelection() 
+           {if (window.getSelection) {window.getSelection().removeAllRanges();}}
+	  </script>
       <meta charset="utf-8">
       <title>Curriculo Vinicius Miguel</title>
       <link rel="stylesheet" href="barras.css">
@@ -13,7 +17,7 @@
       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet">
    </head>
    <main>
-      <body>
+      <body onmouseup="RemoveSelection();">
          <header>
             <div class="manter">
                <img class="foto transp" src="http://i.imgur.com/LZXOMTy.png"/>
@@ -39,7 +43,7 @@
 					</div>
 			</div>
          </header>
-            <section class="informacoes">
+            <section class="informacoes seletor">
                <div class="zoom-mais">
                  <div class="titulos borda"> 
 				  <h2> Resumo </h2>

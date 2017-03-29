@@ -12,6 +12,7 @@ body section {
    margin-right: 20%;
    margin-left: 30%;
    text-align: justify;
+   cursor: pointer;
 }
 
 .informacoes ul{
@@ -124,7 +125,7 @@ a:hover {
 }
 
 .separacao{
-	margin-bottom: 6%;
+	margin-bottom: 8%;
 }
 
 .rodape{
@@ -137,3 +138,11 @@ a:hover {
 	margin-top: 1%;
 }
 
+#seletor {
+   -webkit-touch-callout: section;
+   -webkit-user-select: section;
+   -khtml-user-select: section;
+   -moz-user-select: section;
+   -ms-user-select: section;
+   user-select: section;
+}
