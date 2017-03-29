@@ -12,7 +12,6 @@ body section {
    margin-right: 20%;
    margin-left: 30%;
    text-align: justify;
-   margin-bottom: 8%;
 }
 
 .informacoes ul{
@@ -113,5 +112,28 @@ a:link, a:visited {
 a:hover {
 	text-decoration: inherit;
 	color: #1E90FF;
+}
+
+.borda{
+	border-bottom: 1px #eeefd9 solid;
+    margin-bottom: 3%;
+}
+
+.borda h2{
+   margin-bottom: 1.5%;
+}
+
+.separacao{
+	margin-bottom: 6%;
+}
+
+.rodape{
+	border-top: 1px #eeefd9 solid;
+   text-align: right;
+   margin-bottom: 3%;
+}
+
+.rodape p{
+	margin-top: 1%;
 }
 
