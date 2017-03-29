@@ -15,6 +15,14 @@ body section {
    cursor: pointer;
 }
 
+.cursor{
+	cursor: context-menu;
+}
+
+.cursor-2{
+	cursor: pointer;
+}
+
 .informacoes ul{
    margin-top: 3px;
 }
@@ -136,13 +144,4 @@ a:hover {
 
 .rodape p{
 	margin-top: 1%;
-}
-
-#seletor {
-   -webkit-touch-callout: section;
-   -webkit-user-select: section;
-   -khtml-user-select: section;
-   -moz-user-select: section;
-   -ms-user-select: section;
-   user-select: section;
 }
