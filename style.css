@@ -23,11 +23,8 @@ body section {
 	cursor: pointer;
 }
 
-.informacoes ul{
-   margin-top: 3px;
-}
 
-.informacoes h2{
+.wrapper h2{
    margin-top: 2.5%;
    margin: auto;
    color: #2e76af;
@@ -53,12 +50,20 @@ body section {
    margin-bottom: 3px;
 }
 
-header{
-   height: 100%;
-   position: fixed;
-   left: 0;
-   width: 30%;
+@media (min-width: 1000px){
+   header{
+      margin-top: -2%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      width: 30%;
+   }
 }
+
+.nome, .info{
+   margin-bottom: 3%;
+}
+
 
 .foto{
    display: block;
@@ -67,7 +72,7 @@ header{
    max-width: 60%;
 }
 
-.manter h1, .manter p, .email{
+.col-fixa h1, .col-fixa p, .email{
    margin-top: -2%;
    margin-left: auto;
    margin-right: auto;
@@ -75,7 +80,7 @@ header{
    text-align: center;
 }
 
-.manter h1{
+.col-fixa h1{
    font-size: 160%;
 }
 
@@ -84,6 +89,7 @@ header{
 	margin-left: 3%;
 	margin-right: auto;
 	text-align: center;
+   margin-bottom: 10%;
 }
 
 .redes-sociais a{
