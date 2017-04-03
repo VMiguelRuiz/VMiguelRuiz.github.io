@@ -7,7 +7,7 @@ html{
    margin: 0 auto;
 }
 
-.titulos{
+.titulos-margem{
 	margin-bottom: -10px;
 }
 
@@ -70,7 +70,16 @@ body section {
       margin-right: 15%;
       margin-left: 15%;
       text-align: justify;
+      font-size: 120%;
       cursor: pointer;
+   }
+
+   header, .titulos-margem h2{
+      font-size: 120%;
+   }
+
+   .rodape{
+      font-size: 90%;
    }
 }
 
