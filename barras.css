@@ -27,7 +27,7 @@
 	box-shadow: inset -1px -1px 18px #CECECE, inset 0 -1px 0 #CECECE
 }
 .progresso-barra-java {
-	width: 60%;
+	width: 49%;
 	height: 15px;
 	background-color: #428bca;
 	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
@@ -36,26 +36,6 @@
 	transition: width .6s ease
 }
 .progresso-barra-SQLServer {
-	width: 55%;
-	height: 15px;
-	background-color:#428bca;
-	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
-	box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
-	-webkit-transition: width .6s ease;
-	transition: width .6s ease
-}
-
-.progresso-barra-MySQL {
-	width: 50%;
-	height: 15px;
-	background-color:#428bca;
-	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
-	box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
-	-webkit-transition: width .6s ease;
-	transition: width .6s ease
-}
-
-.progresso-barra-HTML {
 	width: 40%;
 	height: 15px;
 	background-color:#428bca;
@@ -65,8 +45,28 @@
 	transition: width .6s ease
 }
 
+.progresso-barra-MySQL {
+	width: 42%;
+	height: 15px;
+	background-color:#428bca;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	-webkit-transition: width .6s ease;
+	transition: width .6s ease
+}
+
+.progresso-barra-HTML {
+	width: 38%;
+	height: 15px;
+	background-color:#428bca;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	-webkit-transition: width .6s ease;
+	transition: width .6s ease
+}
+
 .progresso-barra-CSS {
-	width: 37%;
+	width: 34%;
 	height: 15px;
 	background-color:#428bca;
 	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
