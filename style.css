@@ -1,0 +1,178 @@
+h1, h2, h3, h4, h5, h6, p, body, head {
+   font-family: "Open Sans", sans-serif;
+   color: #000;
+}
+
+html{
+   margin: 0 auto;
+}
+
+.titulos-margem{
+	margin-bottom: -10px;
+}
+
+body section {
+   margin-top: 2%;
+   margin-right: 20%;
+   margin-left: 30%;
+   text-align: justify;
+   cursor: pointer;
+}
+
+.cursor{
+	cursor: context-menu;
+}
+
+.cursor-2{
+	cursor: pointer;
+}
+
+
+.wrapper h2{
+   margin-top: 2.5%;
+   margin: auto;
+   color: #2e76af;
+   font-size: 18px;
+}
+
+.formacao-academica, .experiencia-profissional, .curso, .resumo{
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-bottom: 3%;
+}
+
+.curso{
+   margin-top: 3%;
+}
+
+.curso li{
+   margin-top: 2%;
+}
+.conhecimento{
+   margin-left: 4%;
+   margin-right: 3%;
+   margin-bottom: 3px;
+}
+
+@media (min-width: 1000px){
+   header{
+      margin-top: -2%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      width: 30%;
+   }
+}
+
+@media(max-width: 1000px){
+   body section {
+      margin-top: 2%;
+      margin-right: 15%;
+      margin-left: 15%;
+      text-align: justify;
+      font-size: 120%;
+      cursor: pointer;
+   }
+
+   header, .titulos-margem h2{
+      font-size: 120%;
+   }
+
+   .rodape{
+      font-size: 90%;
+   }
+}
+
+.nome, .info{
+   margin-bottom: 2.2%;
+}
+
+
+.foto{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 60%;
+}
+
+.col-fixa h1, .col-fixa p, .email{
+   margin-top: -2%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 60%;
+   text-align: center;
+}
+
+.col-fixa h1{
+   font-size: 160%;
+}
+
+.botao-cv{
+	margin-top: 2%;
+	margin-right: auto;
+	text-align: center;
+    margin-bottom: 5%;
+}
+
+.redes-sociais a{
+      width: 32px;
+      height: 32px;
+	  margin-left: 2%;
+      display: inline-block;
+      text-indent: -9999px;
+}
+
+.redes-sociais{
+   margin-left: -2%;
+   text-align: center;
+}
+
+.github{
+   background-image: url(img/git.png);
+}
+
+.facebook{
+   background-image: url(img/face.png);
+}
+
+.twitter{
+   background-image: url(img/twitter.png);
+}
+
+.linkedin{
+   background-image: url(img/linkedin.png);
+}
+
+a:link, a:visited {
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: inherit;
+	color: #1E90FF;
+}
+
+.borda{
+	border-bottom: 1px #eeefd9 solid;
+    margin-bottom: 1.5%;
+}
+
+.borda h2{
+   margin-bottom: 1.5%;
+}
+
+.separacao{
+	margin-bottom: 8%;
+}
+
+.rodape{
+	border-top: 1px #eeefd9 solid;
+  text-align: right;
+  margin-bottom: 3%;
+}
+
+.rodape p{
+	margin-top: 1%;
+  margin-right: 2%;
+  color: #a6a6a6;
+}
