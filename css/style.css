@@ -1,0 +1,139 @@
+/* ========================= layout ========================= */
+
+
+/* -- Barra de navegacao -- */
+nav.navbar-edicao{
+  background: rgba(0, 35, 49, 0.6);
+  border: none;
+  border-radius: 0;
+}
+
+nav.navbar-invertida{
+  background: #002331;
+  border: none;
+}
+
+.navbar-inverse .navbar-brand{
+  color: white;
+}
+.navbar-inverse .navbar-brand:hover {
+  color: white;
+  background-color: #FD3D39;
+  transition: background 0.4s, color 0.4s;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-inverse .navbar-toggle .icon-bar{
+    background-color: #FD3D39;
+}
+.navbar-inverse .navbar-nav > li > a{
+  color: white;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+  color: white;
+  background-color: #FD3D39;
+  transition: background 0.4s, color 0.4s;
+}
+
+/*-- CAPA --*/
+.capa {
+  background: url("../img/programmer.png"),
+				linear-gradient(50deg,#232526,#414345);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.texto-capa{
+  padding: 5%;
+}
+
+/* -- BOTOES -- */
+.btn-custom {
+  border-radius: 1;
+  border: none;
+  padding: 10px 50px;
+  margin: 0 15px;
+  text-transform: uppercase;
+  transition: background 0.5s, color 0.5s;
+}
+.btn-curriculo{
+  color: #FD3D39;
+}
+.btn-contato{
+  background-color: #FD3D39;
+  color: white;
+}
+.btn-curriculo:hover{
+  background: #e5e5e5;
+  color: #FD3D39;
+}
+.btn-contato:hover{
+  background: #d83131;
+  color: white;
+}
+
+/**/
+#sobre-mim{
+  background: salmon;
+}
+
+
+/* ========================= tipografia ========================= */
+nav.navbar-edicao{
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+.navbar-inverse .navbar-brand{
+  letter-spacing: 0.09em;
+}
+
+.navbar-inverse .navbar-brand-invertido{
+  font-size: 1.5em;
+}
+
+.texto-capa{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.texto-capa h1{
+  font-size: 4em;
+	letter-spacing: -0.05em;
+  margin-bottom: 30px;
+}
+.texto-capa h4{
+  margin-bottom: 30px;
+}
+
+ #sobre-mim p, .texto-capa p{
+  font-family: 'Mada', sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  color: white;
+  text-align: center;
+}
+
+
+      .fondo2{
+        height: 400px;
+        background: pink;
+      }
+      .fondo3{
+        height: 400px;
+        background: salmon;
+      }
+
+
+/* ========================= animacoe ========================= */
+.transicao{
+  transition: all 1s ease;
+}
