@@ -492,7 +492,7 @@ footer p{
     }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 440px) {
     .intro h1 {
         font-size: 1.2em;
     }
@@ -508,5 +508,12 @@ footer p{
     }
     .expand-section ul li {
         font-size: .8em;
+    }
+    footer img{
+        width: 40px;
+    }
+    footer p{
+        font-size: .8em;
+        margin-top: 2.5px;
     }
 }
