@@ -351,8 +351,7 @@ ul {
     .sidebar{
         width: 100%;
         height: auto;
-        position: fixed;
-        top: 0;
+        position: relative;
     }
 
     .header img{
@@ -370,10 +369,6 @@ ul {
     .navbar ul li {
         display: block;
         text-align: center;
-    }
-
-    .intro-bg{
-        margin-top: 114px;
     }
 
     .intro h1{
@@ -452,26 +447,3 @@ ul {
         font-size: 1.6em;
     }
 }
-
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
