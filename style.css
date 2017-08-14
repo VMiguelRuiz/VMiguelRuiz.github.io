@@ -107,8 +107,13 @@ ul {
 
 .expand::before{
     content: "+";
-    color: #cccccc;
+    color: #0dbc82;
     padding: 0 10px;
+    font-weight: 400;
+}
+
+.expand{
+    border-bottom: 1px solid #cccccc;
 }
 
 .expand-section ul li{
@@ -117,13 +122,12 @@ ul {
     color: #5b676a;
 }
 
-.span-verde{
-    color: #0dbc82;
+.expand-section span{
     font-weight: 600;
 }
 
-.expand-section span{
-    font-weight: 600;
+.expand-section i{
+    color: #0dbc82;
 }
 
 /*====================CONTAINER E CONTEUDO====================*/
@@ -300,11 +304,6 @@ ul {
     background-size: cover;
 }
 
-#contato{
-    /*border: none;
-    overflow: hidden;*/
-}
-
 .caixa-contato{
     width: 33%;
     text-align: center;
@@ -333,13 +332,11 @@ ul {
 
 .btn-menu{
     display: none;
+    color: rgba(255,255,255,.7);
+    padding: 15px 0;
 }
 
 /*============================================================*/
-
-@media only screen and (max-width: 1024px) {
-
-}
 
 @media only screen and (max-width: 960px) {
     .container{
@@ -352,6 +349,22 @@ ul {
         width: 100%;
         height: auto;
         position: relative;
+        float: left;
+    }
+
+    .sidebar .nome{
+        color: rgba(255,255,255,.7);
+        float: left;
+    }
+
+    .btn-menu{
+        float: right;
+    }
+
+    .header{
+        float: left;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .header img{
@@ -364,6 +377,7 @@ ul {
 
     .navbar{
         display: none;
+        clear: both;
     }
 
     .navbar ul li {
@@ -404,11 +418,19 @@ ul {
     #sobre{
         padding-bottom: 5%;
     }
+
+    .expand-section ul li{
+        font-size: .9em;
+    }
 }
 
 @media only screen and (max-width: 640px) {
     .container{
         padding: 10% 0;
+    }
+
+    .sidebar .nome{
+        font-size: 1.4em;
     }
 
     .intro-bg{
@@ -437,13 +459,20 @@ ul {
         font-size: 1em;
         text-align: left;
     }
+
     #sobre h3{
         font-size: 20px;
     }
+
     .intro h1{
         font-size: 1.2em;
     }
+
     .subtitulo{
         font-size: 1.6em;
+    }
+
+    .expand-section ul li{
+        font-size: .8em;
     }
 }
