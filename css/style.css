@@ -331,8 +331,8 @@ footer img {
     float: left;
 }
 
-footer p{
-    color: rgba(255,255,255,.7);
+footer p {
+    color: rgba(255, 255, 255, .7);
     font-size: .9em;
     letter-spacing: .05em;
     text-transform: uppercase;
@@ -342,6 +342,7 @@ footer p{
     float: left;
     display: block;
 }
+
 
 /*==================== SECTION EXPANSIVEL ====================*/
 
@@ -509,11 +510,21 @@ footer p{
     .expand-section ul li {
         font-size: .8em;
     }
-    footer img{
+    footer img {
         width: 40px;
     }
-    footer p{
+    footer p {
         font-size: .8em;
         margin-top: 2.5px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    footer img {
+        width: 35px;
+    }
+    footer p{
+        font-size: .7em;
+        margin-left: 6px;
     }
 }
