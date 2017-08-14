@@ -181,12 +181,10 @@
         $(document).ready(function() {
             $('.expand').click(function(e) {
                 e.preventDefault();
-                $(this).find('i').toggleClass('fa-minus-circle fa-plus-circle');
                 $('.expand-section').slideUp('normal');
                 if ($(this).next().is(':hidden') === true) {
                     $(this).next().slideDown('normal');
                 }
-
             });
             $('.expand-section').hide();
         });
