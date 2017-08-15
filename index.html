@@ -90,14 +90,63 @@
     </div>
 
     <!-- Skills -->
-    <div class="container bg-verde">
+    <section class="container bg-verde">
         <div class="conteudo" id="skills">
             <h2 class="subtitulo">Skills</h2>
+
+            <!-- Java -->
+            <div class="progress-bar" data-percentage="40%">
+                <h4 class="progress-title-holder">
+                    <span class="progress-title">Java</span>
+                    <span class="progress-number-wrapper">
+                        <span class="progress-number-mark">
+                            <span class="percent"></span>
+                            <span class="down-arrow"></span>
+                        </span>
+                    </span>
+                </h4>
+                <div class="progress-content-outter">
+                    <div class="progress-content"></div>
+                </div>
+            </div>
+
+            <!-- HTML -->
+            <div class="progress-bar" data-percentage="30%">
+                <h4 class="progress-title-holder">
+                    <span class="progress-title">HTML</span>
+                    <span class="progress-number-wrapper">
+                        <span class="progress-number-mark">
+                            <span class="percent"></span>
+                            <span class="down-arrow"></span>
+                        </span>
+                    </span>
+                </h4>
+                <div class="progress-content-outter">
+                    <div class="progress-content"></div>
+                </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="progress-bar" data-percentage="27%">
+                <h4 class="progress-title-holder">
+                    <span class="progress-title">CSS</span>
+                    <span class="progress-number-wrapper">
+                        <span class="progress-number-mark">
+                            <span class="percent"></span>
+                            <span class="down-arrow"></span>
+                        </span>
+                    </span>
+                </h4>
+                <div class="progress-content-outter">
+                    <div class="progress-content"></div>
+                </div>
+            </div>
+
         </div>
-    </div>
+    </section>
 
     <!-- Experiencia -->
-    <div class="container">
+    <section class="container">
         <div class="conteudo" id="experiencia">
             <h2 class="subtitulo cinza">Experiência</h2>
 
@@ -129,7 +178,7 @@
             </section>
 
         </div>
-    </div>
+    </section>
 
 
     <!-- Contato -->
@@ -208,6 +257,27 @@
                 }
             });
             $('.expand-section').hide();
+        });
+    </script>
+
+    <script>
+    jQuery(document).ready(function(){
+
+        jQuery('.progress-bar').each(function() {
+            jQuery(this).find('.progress-content').animate({
+                width:jQuery(this).attr('data-percentage')
+            },2000);
+
+            jQuery(this).find('.progress-number-mark').animate(
+                {left:jQuery(this).attr('data-percentage')},
+                {
+                    duration: 2000,
+                    step: function(now, fx) {
+                        var data = Math.round(now);
+                        jQuery(this).find('.percent').html(data + '%');
+                    }
+                });
+            });
         });
     </script>
 
