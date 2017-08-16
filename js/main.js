@@ -51,22 +51,6 @@ jQuery(document).ready(function(){
         });
     });
 
-//
-// $(document).ready(function(){
-//     $(window).scroll(function(){
-//         if ($(this).scrollTop() > 100) {
-//             $('a[href="#intro"]').fadeIn();
-//         } else {
-//             $('a[href="#intro"]').fadeOut();
-//         }
-//     });
-//
-//     $('a[href="#intro"]').click(function(){
-//         $('html, body').animate({scrollTop : 0},800);
-//         return false;
-//     });
-// });
-
 $(window).scroll(function() {
     if ($(this).scrollTop() > 60) {
         $('.btn-topo').addClass('btn-topo-ativo');
