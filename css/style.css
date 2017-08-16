@@ -7,7 +7,7 @@ html, body {
     margin: 0;
 }
 
-*{
+* {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -79,6 +79,10 @@ ul {
     -webkit-transition: all 0.5s;
 }
 
+.animacao-topo{
+    -webkit-transition: background 800ms, opacity 800ms, visibility 800ms;
+    transition: background 800ms, opacity 800ms, visibility 800ms;
+}
 
 /*==================== BOTOES ====================*/
 
@@ -106,6 +110,27 @@ ul {
     border: 1px solid #06262c;
 }
 
+/*==================== SUBIR ====================*/
+
+.btn-topo {
+    visibility: hidden;
+    background: #06262c;
+    opacity: 0;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    padding: 5px 10px 10px 10px;
+}
+
+.btn-topo i {
+    color: #fff;
+}
+
+.btn-topo-ativo{
+    visibility: visible;
+    opacity: .7;
+}
 
 /*==================== CONTAINER E CONTEUDO ====================*/
 
@@ -205,7 +230,7 @@ ul {
 
 /*====================INTRODUCAO====================*/
 
-.intro {
+#intro {
     border: none;
     padding-top: 10%;
 }
@@ -215,7 +240,7 @@ ul {
     background-size: cover;
 }
 
-.intro h1 {
+#intro h1 {
     color: rgba(255, 255, 255, 0.9);
     font-weight: 300;
     font-size: 2.5em;
@@ -223,16 +248,16 @@ ul {
     /*text-align: justify;*/
 }
 
-.intro ul li {
+#intro ul li {
     display: inline-block;
     padding: 3% 3% 0 0;
 }
 
-.intro ul li a i {
+#intro ul li a i {
     color: rgba(255, 255, 255, 0.4);
 }
 
-.intro ul li a i:hover {
+#intro ul li a i:hover {
     color: #FFF;
 }
 
@@ -282,85 +307,85 @@ ul {
     width: 40px;
 }
 
-.progress-bar{
+.progress-bar {
     padding: 5px 0;
 }
 
-
 .progress-title-holder {
-  padding-bottom: 7px;
-  position: relative;
-  margin: 5px 0;
-  font-family: Montserrat, sans-serif;
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: 400;
-  color: #2e2e2e;
+    padding-bottom: 7px;
+    position: relative;
+    margin: 5px 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #2e2e2e;
 }
 
 .progress-title {
-  color: #fff;
-  font-weight: 400;
-  letter-spacing: .05em;
-  z-index: 100;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: .05em;
+    z-index: 100;
 }
 
 .progress-number-wrapper {
-  width: 100%;
-  z-index: 10;
+    width: 100%;
+    z-index: 10;
 }
 
 .progress-number-mark {
-  margin-bottom: 4px;
-  border-radius: 3px;
-  background-color: rgb(22,23,29);
-  padding: 0 8px;
-  position: absolute;
-  bottom: 0;
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
+    margin-bottom: 4px;
+    border-radius: 3px;
+    background-color: rgb(22, 23, 29);
+    padding: 0 8px;
+    position: absolute;
+    bottom: 0;
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 }
 
-.progress-number-wrapper,
-.progress-number-mark {
-  font-family: Open Sans, sans-serif;
-  font-size: 11px;
-  line-height: 24px;
-  height: 24px;
-  letter-spacing: 0px;
-  font-weight: 600;
-  font-style: normal;
-  text-transform: none;
-  color: #ffffff;
+.progress-number-wrapper, .progress-number-mark {
+    font-family: Open Sans, sans-serif;
+    font-size: 11px;
+    line-height: 24px;
+    height: 24px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: none;
+    color: #ffffff;
 }
 
 .down-arrow {
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
-  border-top: 3px solid #16171d;
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid #16171d;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 }
 
 .progress-content-outter {
-  height: 12px;
-  background-color: #ffffff;
+    height: 12px;
+    background-color: #ffffff;
 }
 
 .progress-content {
-  height: 12px;
-  background-color: rgba(67, 243, 183, .92);
-  width: 0%; /* Initial value */
+    height: 12px;
+    background-color: rgba(67, 243, 183, .92);
+    width: 0%;
+    /* Initial value */
 }
+
 
 /*====================Contato====================*/
 
@@ -485,6 +510,9 @@ footer p {
         margin-left: 0px;
         padding: 5% 0;
     }
+    .btn-topo {
+        display: none;
+    }
     .sidebar {
         width: 100%;
         height: auto;
@@ -515,7 +543,7 @@ footer p {
         display: block;
         text-align: center;
     }
-    .intro h1 {
+    #intro h1 {
         font-size: 1.5em;
         text-align: left;
     }
@@ -525,13 +553,13 @@ footer p {
     .subtitulo {
         font-size: 2.2em;
     }
-    .intro {
+    #intro {
         text-align: center;
     }
-    .intro ul li a i {
+    #intro ul li a i {
         padding: 0 4%;
     }
-    .intro h1 {
+    #intro h1 {
         font-size: 1.5em;
         text-align: center;
     }
@@ -549,10 +577,10 @@ footer p {
         float: none;
     }
     .progress-content-outter {
-      height: 8px;
+        height: 8px;
     }
     .progress-content {
-      height: 8px;
+        height: 8px;
     }
 }
 
@@ -582,7 +610,7 @@ footer p {
 }
 
 @media only screen and (max-width: 440px) {
-    .intro h1 {
+    #intro h1 {
         font-size: 1.2em;
     }
     .subtitulo {
@@ -611,7 +639,7 @@ footer p {
     footer img {
         width: 30px;
     }
-    footer p{
+    footer p {
         font-size: .7em;
         margin-top: 1.5px;
         margin-left: 6px;

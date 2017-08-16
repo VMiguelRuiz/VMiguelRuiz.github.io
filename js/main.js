@@ -1,4 +1,4 @@
-<!-- btn-menu toggle -->
+// btn-menu toggle
     $(document).ready(function() {
         $('.btn-menu').click(function() {
             $('.navbar').slideToggle();
@@ -12,14 +12,14 @@
         });
     });
 
-<!-- plus/minus toggle -->
+// plus/minus toggle
     $(function() {
         $('.expand').click(function() {
             $(this).find('i').toggleClass('fa-minus-circle fa-plus-circle');
         });
     });
 
-<!-- section expansivel -->
+// section expansivel
     $(document).ready(function() {
         $('.expand').click(function(e) {
             e.preventDefault();
@@ -32,8 +32,8 @@
         $('.expand-section').hide();
     });
 
+// Barra de progresso
 jQuery(document).ready(function(){
-
     jQuery('.progress-bar').each(function() {
         jQuery(this).find('.progress-content').animate({
             width:jQuery(this).attr('data-percentage')
@@ -50,3 +50,27 @@ jQuery(document).ready(function(){
             });
         });
     });
+
+//
+// $(document).ready(function(){
+//     $(window).scroll(function(){
+//         if ($(this).scrollTop() > 100) {
+//             $('a[href="#intro"]').fadeIn();
+//         } else {
+//             $('a[href="#intro"]').fadeOut();
+//         }
+//     });
+//
+//     $('a[href="#intro"]').click(function(){
+//         $('html, body').animate({scrollTop : 0},800);
+//         return false;
+//     });
+// });
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 60) {
+        $('.btn-topo').addClass('btn-topo-ativo');
+    } else {
+        $('.btn-topo').removeClass('btn-topo-ativo');
+    }
+});
