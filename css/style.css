@@ -79,10 +79,11 @@ ul {
     -webkit-transition: all 0.5s;
 }
 
-.animacao-topo{
+.animacao-topo {
     -webkit-transition: background 800ms, opacity 800ms, visibility 800ms;
     transition: background 800ms, opacity 800ms, visibility 800ms;
 }
+
 
 /*==================== BOTOES ====================*/
 
@@ -110,6 +111,7 @@ ul {
     border: 1px solid #06262c;
 }
 
+
 /*==================== SUBIR ====================*/
 
 .btn-topo {
@@ -128,10 +130,11 @@ ul {
     color: #fff;
 }
 
-.btn-topo-ativo{
+.btn-topo-ativo {
     visibility: visible;
     opacity: .7;
 }
+
 
 /*==================== CONTAINER E CONTEUDO ====================*/
 
@@ -496,14 +499,17 @@ footer p {
 
 /*============================================================*/
 
+@media only screen and (max-width: 1024px) {
+    .btn-topo {
+        padding: 4px 7px 8px;
+    }
+}
+
 @media only screen and (max-width: 960px) {
     .container {
         width: 100%;
         margin-left: 0px;
         padding: 5% 0;
-    }
-    .btn-topo {
-        display: none;
     }
     .sidebar {
         width: 100%;
@@ -579,6 +585,9 @@ footer p {
 @media only screen and (max-width: 640px) {
     .container {
         padding: 10% 0;
+    }
+    .btn-topo {
+        display: none;
     }
     .sidebar .nome {
         font-size: 1.4em;
