@@ -278,7 +278,8 @@ ul {
     font-size: 1.4em;
     font-weight: 300;
     line-height: 1.5em;
-    color: #0dbc82;
+    color: #0aa873;
+    /*color: #0dbc82;*/
     margin-bottom: 10px;
 }
 
@@ -473,16 +474,6 @@ footer p {
     color: #cccccc;
     padding: 0 15px;
 }
-
-
-/*.expand::before{
-    content: "+";
-    color: #0dbc82;
-    padding: 0 0.8%;
-    border: 1px solid #0dbc82;
-    border-radius: 100%;
-    font-weight: 400;
-}*/
 
 .expand-section {
     padding: 15px 0;
