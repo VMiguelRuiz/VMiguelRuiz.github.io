@@ -51,10 +51,22 @@ jQuery(document).ready(function(){
         });
     });
 
+
+// Botao subir ao topo
 $(window).scroll(function() {
     if ($(this).scrollTop() > 60) {
         $('.btn-topo').addClass('btn-topo-ativo');
     } else {
         $('.btn-topo').removeClass('btn-topo-ativo');
     }
+});
+
+//Scroll Suave Link Interno
+$('.scroll-suave').click(function(e){
+    e.preventDefault();
+    var id = $(this).attr('href'),
+        targetOffset = $(id).offset().top;
+    $('html, body').animate({
+        scrollTop: targetOffset - 35
+    }, 500)
 });
