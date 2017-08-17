@@ -67,6 +67,6 @@ $('.scroll-suave').click(function(e){
     var id = $(this).attr('href'),
         targetOffset = $(id).offset().top;
     $('html, body').animate({
-        scrollTop: targetOffset - 35
+        scrollTop: targetOffset 
     }, 500)
 });
