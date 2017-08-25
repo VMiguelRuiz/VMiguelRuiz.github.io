@@ -31,6 +31,9 @@ ul {
 }
 
 
+
+
+
 /*==================== CORES BACKGROUND ====================*/
 
 .bg-verde-escuro {
@@ -141,7 +144,6 @@ ul {
 .container {
     width: 80%;
     /*border: 2px solid pink;*/
-    /*float: right;*/
     margin-left: 20%;
     position: relative;
     padding: 4% 0;
@@ -301,9 +303,7 @@ ul {
 
 /*====================FORMACAO====================*/
 
-#formacao {
-    border: none;
-}
+
 
 
 /*====================Skills====================*/
